@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body{
+        font-size: 22px;
+    }
+</style>
+<body>
+
+<script>
+    let i, j;
+    let space = 10;
+    let draw = 15;
+    let char = "<strong>*</strong>"
+    for (i = 0; i < 5; i++) {
+        for (j = 0; j < space; j++) {
+            document.write('&nbsp');
+        }
+        for (j = 0; j < draw; j++) {
+            document.write(char);
+        }
+        for (j = 0; j < space * 2; j++) {
+            document.write('&nbsp');
+        }
+        for (j = 0; j < draw; j++) {
+            document.write(char);
+        }
+        document.write('<br>');
+        space -= 2;
+        draw += 2;
+    }
+
+    for (i = 0; i < 4; i++) {
+        for (j = 0; j < 50; j++) {
+            document.write(char);
+        }
+        document.write('<br>');
+    }
+
+    let space1 = 2;
+
+    for (i = 0; i < 14; i++) {
+        for (j = 0; j < space1-1; j++) {
+            document.write('&nbsp&nbsp');
+        }
+        for (j = 0; j < 51 - space1 * 2; j++) {
+            document.write(char);
+        }
+        document.write('<br>');
+        space1 += 2;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<script>
+    let vayMoney = +prompt("Nhập số tiền muốn vay:");
+    let month = +prompt("Bạn muốn vay trong bao nhiêu tháng? Lãi suất tháng là: 0.7%");
+    for (let i = 0; i < month; i++) {
+        vayMoney += (vayMoney * 0.7 / 100);
+    }
+    alert("Tổng số tiền cần phải trả là: " + vayMoney);
+
+</script>
+</body>
+</html>

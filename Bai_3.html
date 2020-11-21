@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<style>
+    body{
+        font-size: 35px;
+    }S
+</style>
+<body>
+<script>
+
+    let tamGiac = '';
+
+    function tamGiac1(){
+
+        for (let i = 1; i <= 5; i++){
+            for (let j = 1; j <= 5; j++){
+                if (i >= j){
+                    tamGiac += "*";
+                }
+                else{
+                    tamGiac += "&nbsp;&nbsp;";
+                }
+            }
+            tamGiac += "</br>";
+        }
+        tamGiac += "</br>";
+        document.write(tamGiac);
+        tamGiac = '';
+    }
+
+    function tamGiac2(){
+
+        for (let i = 5; i > 0; i--) {
+            for (let j = 1; j < 6; j++) {
+                if (j > i) {
+                    tamGiac += "&nbsp;&nbsp;";
+                } else {
+                    tamGiac += "*";
+                }
+            }
+            tamGiac += "</br>"
+        }
+        tamGiac += "</br>";
+        document.write(tamGiac);
+        tamGiac = "";
+    }
+
+    function tamGiac3(){
+
+        for (let i = 5; i > 0; i--) {
+            for (let j = 1; j < 6; j++) {
+                if (j >= i) {
+                    tamGiac += "*";
+                } else {
+                    tamGiac += "&nbsp;&nbsp;";
+                }
+            }
+            tamGiac += "</br>"
+        }
+        tamGiac += "</br>";
+        document.write(tamGiac);
+        tamGiac = "";
+    }
+
+    function tamGiac4(){
+
+        for (let i = 1; i <= 5; i++){
+            for (let j = 1; j <= 5; j++){
+                if (i <= j){
+                    tamGiac += "*";
+                }
+                else{
+                    tamGiac += "&nbsp;&nbsp;";
+                }
+            }
+            tamGiac += "</br>";
+        }
+        tamGiac += "</br>";
+        document.write(tamGiac);
+        tamGiac = "";
+    }
+
+    function te(){
+    }
+
+    tamGiac1();
+    tamGiac2();
+    tamGiac3();
+    tamGiac4();
+</script>
+</body>
+</html>
